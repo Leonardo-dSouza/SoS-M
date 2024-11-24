@@ -1,0 +1,10 @@
+.custom-title {
+    text-align: center;
+    font-size: 2rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    letter-spacing: -0.05em; /* tracking-tight */
+    color: #ff7b91; /* text-red-700 */
+    margin-top: 2.5rem; /* mt-10 */
+    padding: 1rem; /* Ajusta o espaçamento interno */
+  }
+  

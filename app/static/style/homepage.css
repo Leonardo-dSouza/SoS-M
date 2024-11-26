@@ -1,0 +1,80 @@
+div.carousel-inner{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    filter: brightness(.8);
+}
+
+section.welcome-text-area{
+
+}
+    h2.hello-user{
+        margin-bottom: 5px;
+
+        font-size: 1.6em;
+    }
+        span.custom-user-name{
+            color: var(--rosa);
+            font-weight: bold;
+        }
+
+    p.welcome-content{
+        font-size: .85em;
+        line-height: 17.5px;
+    }
+
+section.redirect-buttons-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    a.welcome-redirect-button{
+        background-color: var(--rosa);
+        padding: 15px 0;
+
+        color: white;
+
+        border-radius: 10px;
+    }
+
+        a.welcome-redirect-button:hover{
+            transform: scale(1.01);
+            transition: ease-out 150ms;
+        }
+
+        div.button-icon-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            div.button-icon-area i.button-icon{
+                font-size: 2.1em;
+            }
+
+        div.button-text-area{
+            
+        }
+
+            div.button-text-area h4.button-title{
+                margin-bottom: 2px;
+                font-size: .95em;
+                font-weight: 600;
+                word-spacing: -1px;
+            }
+
+                div.button-text-area h4.button-title::after{
+                    content: " \F1C5";
+
+                    margin-left: 3px;
+
+                    font-size: .85em;
+                    font-family: "Bootstrap-icons";
+                }
+
+            div.button-text-area p.button-resume{
+                font-size: .75em;
+                font-weight: 300;
+                line-height: 14px;
+            }

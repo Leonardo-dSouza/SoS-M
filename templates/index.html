@@ -1,44 +1,93 @@
 {% extends 'base.html' %}
 
-{% block cssLinks %} {% endblock %}
+{% block cssLinks %}
+    <link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+{% endblock %}
 
 {% block pageTitle %} Homepage {% endblock %}
 
 {% block pageBody %}
 
-<!-- Carrossel do Bootstrap -->
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Carrossel do Bootstrap -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Mudar o link do carrossel depois!!! -->
+            <div class="carousel-item active">
+              <img src="https://media.istockphoto.com/id/1129473522/pt/foto/colorful-panoramic-mountain-view-at-sunrise.jpg?s=612x612&w=0&k=20&c=K8vSoS4nLRuQQrwR7X02pf4KpU5tYesZBuN-Hmb0X_U=" class="d-block w-100" alt="...">
+            </div>
+
+            <!-- Mudar o link do carrossel depois!!! -->
+            <div class="carousel-item">
+              <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/09/milford-sound-nova-zelandia.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <!-- Mudar o link do carrossel depois!!! -->
+            <div class="carousel-item">
+              <img src="https://img.freepik.com/fotos-gratis/belas-paisagens-de-formacoes-rochosas-a-beira-mar-em-queens-bath-kauai-havai-ao-por-do-sol_181624-36857.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-inner">
 
-        <!-- Mudar o link do carrossel depois!!! -->
-        <div class="carousel-item active">
-          <img src="https://media.istockphoto.com/id/1129473522/pt/foto/colorful-panoramic-mountain-view-at-sunrise.jpg?s=612x612&w=0&k=20&c=K8vSoS4nLRuQQrwR7X02pf4KpU5tYesZBuN-Hmb0X_U=" class="d-block w-100" alt="...">
-        </div>
+    <main class="welcome-content-area px-4 pt-4">
+        <section class="welcome-text-area">
+            <h2 class="hello-user">
+                Olá, <span class="custom-user-name">Ana Clara</span>!
+            </h2>
+            <p class="welcome-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac est libero. Sed egestas sodales tristique.
+            </p>
+        </section>
 
-        <!-- Mudar o link do carrossel depois!!! -->
-        <div class="carousel-item">
-          <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/09/milford-sound-nova-zelandia.jpg" class="d-block w-100" alt="...">
-        </div>
+        <section class="redirect-buttons-area mt-4 px-2">
+            
+            <!-- Botão "Relate Aqui" -->
+            <a class="welcome-redirect-button row" href="">
+                <div class="col-3 button-icon-area">
+                    <i class="bi bi-clipboard2-plus-fill button-icon"></i>
+                </div>
+                <div class="col button-text-area">
+                    <div class="row">
+                        <h4 class="button-title">Relate Aqui</h4>
+                    </div>
+                    <div class="row">
+                        <p class="button-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Botão "Mapas e Informações" -->
+            <a class="welcome-redirect-button row" href="">
+                <div class="col-3 button-icon-area">
+                    <i class="bi bi-map-fill button-icon"></i>
+                </div>
+                <div class="col button-text-area">
+                    <div class="row">
+                        <h4 class="button-title">Mapas e Informações</h4>
+                    </div>
+                    <div class="row">
+                        <p class="button-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+            
 
-        <!-- Mudar o link do carrossel depois!!! -->
-        <div class="carousel-item">
-          <img src="https://img.freepik.com/fotos-gratis/belas-paisagens-de-formacoes-rochosas-a-beira-mar-em-queens-bath-kauai-havai-ao-por-do-sol_181624-36857.jpg" class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+
+        </section>
+    </main>
 
 
 

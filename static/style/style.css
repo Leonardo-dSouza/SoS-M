@@ -31,6 +31,33 @@ body{
     margin: 0 auto;
 }
 
+/* --- HEADER --- */
+    .header-bar{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent);
+        max-width: 320px;
+        width: 100%;
+        padding: 5px 0;
+        
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 9;
+    }
+
+        .SOS-logotipo{
+            color: white;
+            font-size: 1.4em;
+        }
+
+        .user-profile{
+            color: white;
+            font-size: 1.6em;
+        }
+
 /* --- NAVBAR --- */
 
     .navbar{
@@ -41,10 +68,13 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15);
     }
 
     .navbar > div.container-fluid{
         max-width: 320px;
+        width: 100%;
         margin: 0 auto;
         padding: 0 5px;
 
@@ -101,4 +131,3 @@ body{
 
                 transform: rotate(-25deg);
             }
-

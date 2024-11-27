@@ -5,6 +5,13 @@ div.carousel-inner{
     filter: brightness(.8);
 }
 
+.img{
+    max-height: 250px;
+}
+
+
+
+
 section.welcome-text-area{
 
 }

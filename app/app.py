@@ -21,11 +21,37 @@ def login():
 
 
 @app.route("/")
-def home():
+def homepage():
     return render_template("index.html")
 
 
+@app.route("/perfil")
+def perfil():
+    return render_template("perfil.html")
 
+@app.route("/relate")
+def relate():
+    return render_template("relate.html")
+
+@app.route("/mapa")
+def mapa():
+    return render_template("mapa.html")
+
+@app.route("/contatos")
+def contatos():
+    return render_template("contatos.html")
+
+@app.route("/forum")
+def forum():
+    return render_template("forum.html")
+
+@app.route("/medidas")
+def medidas():
+    return render_template("medidas.html")
+
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
 
 
 

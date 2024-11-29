@@ -2,3 +2,8 @@
      height: 300px; 
      
 }
+
+#map2 {
+     height: 100vh; /* Altura ocupa toda a tela */
+ }
+ 

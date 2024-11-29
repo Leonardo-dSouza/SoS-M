@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block cssLinks %}
+<link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='style/status.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+{% endblock %}
+
+{% block pageTitle %} contatos {% endblock %}
+
+{% block pageBody %}
+<div class="spaced-top flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+    <div class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div class="text">Loading...</div>
+    </div>
+</div>
+{% endblock %}

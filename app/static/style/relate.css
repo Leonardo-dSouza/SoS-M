@@ -1,4 +1,73 @@
 #map {
-     height: 300px; 
-     
+     height: 315px; 
 }
+
+.map-instruction{
+     margin: 15px 25px;
+}
+
+form.relate-form{
+     padding: 7px 30px;
+     padding-bottom: 0px;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 13px;
+}
+
+     form.relate-form .relate-form-label{
+          width: 100%;
+     }
+
+          form.relate-form .relate-form-label > *{
+               width: 100%;
+          }
+
+          .relate-form-label .relate-form-text{
+               margin-bottom: 3px;
+
+               color: var(--preto);
+               font-size: .95em;
+               font-weight: 500;
+          }
+
+          .relate-form-label .relate-form-text.required-input::after{
+               content: "*";
+
+               color: var(--rosa);
+               font-weight: 600;
+          }
+
+          .relate-form-label .relate-form-input{
+               background-color: hsl(276, 17%, 91%);
+               padding: 5px 10px;
+
+               font-size: .9em;
+               font-weight: 400;
+
+               border: 1px dashed rgba(0, 0, 0, 0.09);
+               border-radius: 5px;
+          }
+
+               .relate-form-label select.relate-form-input{
+                    padding: 7px 10px;
+               }
+
+               .relate-form-label textarea.relate-form-input{
+                    height: 130px;
+
+                    resize: none;
+               }
+
+     .relate-form-finish-button{
+          background-color: var(--rosa);
+          width: 100%;
+          padding: 7px;
+
+          color: white;
+          font-size: 1.1em;
+          font-weight: 500;
+
+          border-radius: 10px;
+     }

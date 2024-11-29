@@ -1,18 +1,53 @@
 {% extends 'base.html' %}
 
 {% block cssLinks %}
-<link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
-<link rel="stylesheet" href="{{url_for('static', filename='style/relate.css')}}">
-<link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='style/relate.css')}}">
 {% endblock %}
 
 {% block pageTitle %} Relate Aqui {% endblock %}
 
 {% block pageBody %}
-<div id="map"></div>
+    <div id="map"></div>
+    <h4 class="map-instruction sosM-subtitle">Selecione o local da ocorrência no mapa acima.</h4>
+
+    <form action="" class="relate-form">
+        <label for="data" class="relate-form-label">
+            <h6 class="relate-form-text required-input">Data de Nascimento</h6>
+            <input type="text" name="" id="data" placeholder="DD/MM/YYYY" class="relate-form-input">
+        </label>
+        
+        <label for="periodo" class="relate-form-label">
+            <h6 class="relate-form-text required-input">Período</h6>
+            <select name="" id="periodo"class="relate-form-input">
+                <option value="" selected disabled hidden>Selecione uma Opção</option>
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+        </label>
+        
+        <label for="ocorrencia" class="relate-form-label">
+            <h6 class="relate-form-text required-input">Tipo de Ocorrência</h6>
+            <select name="" id=""class="relate-form-input">
+                <option value="ocorrencia" selected disabled hidden>Selecione uma Opção</option>
+                <option value="">Lorem ipsum</option>
+                <option value="">Lorem ipsum</option>
+                <option value="">Lorem ipsum</option>
+                <option value="">Lorem ipsum</option>
+                <option value="">Lorem ipsum</option>
+            </select>
+        </label>
+        
+        <label for="descricao" class="relate-form-label">
+            <h6 class="relate-form-text">Descrição da Ocorrência</h6>
+            <textarea name="" id="descricao" placeholder="Descreva o caso aqui" class="relate-form-input"></textarea>
+        </label>
+
+        <button class="relate-form-finish-button">Enviar</button>
+    </form>
 
 
 
-<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+
 {% endblock %}

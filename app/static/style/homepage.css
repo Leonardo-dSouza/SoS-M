@@ -15,19 +15,9 @@ div.carousel-inner{
 section.welcome-text-area{
 
 }
-    h2.hello-user{
-        margin-bottom: 5px;
-
-        font-size: 1.6em;
-    }
-        span.custom-user-name{
-            color: var(--rosa);
-            font-weight: bold;
-        }
-
-    p.welcome-content{
-        font-size: .85em;
-        line-height: 17.5px;
+    span.custom-user-name{
+        color: var(--rosa);
+        font-weight: bold;
     }
 
 section.redirect-buttons-area{
@@ -41,6 +31,7 @@ section.redirect-buttons-area{
         padding: 15px 0;
 
         color: white;
+        text-decoration: none !important;
 
         border-radius: 10px;
     }

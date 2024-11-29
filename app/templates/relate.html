@@ -2,14 +2,17 @@
 
 {% block cssLinks %}
 <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='style/status.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style/relate.css')}}">
 <link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
 {% endblock %}
 
-{% block pageTitle %} contatos {% endblock %}
+{% block pageTitle %} Relate Aqui {% endblock %}
 
 {% block pageBody %}
+<div id="map"></div>
 
 
 
+<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
 {% endblock %}

@@ -3,23 +3,64 @@
 {% block cssLinks %}
 <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='style/status.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style/contatos.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style/perfil.css')}}">
+
 {% endblock %}
 
 {% block pageTitle %} contatos {% endblock %}
 
 {% block pageBody %}
-<div class="spaced-top flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
-    <div class="terminal-loader">
-        <div class="terminal-header">
-            <div class="terminal-title">Status</div>
-            <div class="terminal-controls">
-                <div class="control close"></div>
-                <div class="control minimize"></div>
-                <div class="control maximize"></div>
-            </div>
-        </div>
-        <div class="text">Loading...</div>
+
+
+
+
+<div class="card2">
+    <h3 class="card__title">Aqui fica seus contatos de emergência! clique para ligar, ou aperte e segure para editar.
+    </h3>
+    
     </div>
 </div>
+<div class="card2">
+    <h3 class="card__title">Mãe
+    </h3>
+    <p class="card__content">(+55)12 988466755. </p>
+    <div class="card__date">
+        Adicionado em 30/11/2024
+    </div>
+    <div class="card__arrow">
+        <a href="tel:+551239212372">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+<div class="card2">
+    <h3 class="card__title">Pai
+    </h3>
+    <p class="card__content">(+55) 12 991465543 </p>
+    <div class="card__date">
+        Adicionado em 30/11/2024
+    </div>
+    <div class="card__arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+        </svg>
+    </div>
+</div>
+<div class="card2">
+    <h3 class="card__title">Tio João
+    </h3>
+    <p class="card__content">(+55) 12 981123544 </p>
+    <div class="card__date"> 
+        Adicionado em 01/12/2024
+    </div>
+    <div class="card__arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+        </svg>
+    </div>
+</div>
+
 {% endblock %}

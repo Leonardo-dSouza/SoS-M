@@ -48,7 +48,8 @@ var reports = [
     [-23.1913, -45.8992, 'Registro de insultos em um evento público no Parque Vicentina Aranha.'],
     [-23.1977, -45.8911, 'Agressão verbal denunciada em um mercado no Jardim Aquarius.'],
     [-23.1823, -45.8890, 'Relato de violência psicológica em um bairro residencial no Jardim Satélite.'],
-    [-23.1905, -45.8810, 'Caso de perseguição próximo ao Terminal Rodoviário.']
+    [-23.1905, -45.8810, 'Caso de perseguição próximo ao Terminal Rodoviário.'],
+    [-23.2003, -45.9083, 'Relato de perseguição: {12/11/2024} {Noite} homem de meia idade, boné preto e blusa moletom cinza.'] 
 ];
 
 reports.forEach(function (report) {
